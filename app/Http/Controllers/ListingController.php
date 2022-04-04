@@ -63,7 +63,8 @@ class ListingController extends Controller
      */
     public function show($id)
     {
-        //
+        $listing = Listing::find($id);
+        return view('show' , compact('listing'));
     }
 
     /**

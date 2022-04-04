@@ -26,7 +26,6 @@
                                 <td>{{$listing->name}}</td>
                                 <td>
                                     <a href="{{route('listings.edit' , $listing->id)}}" class="btn btn-info" style="float: right">Edit</a>
-                                    <a href="{{route('listings.show' , $listing->id)}}" class="btn btn-warning" style="float: right">view</a>
                                     <form action="{{route('listings.destroy' , $listing->id)}}" method="post" style="float: right">
                                     @csrf
                                     @method('DELETE')
